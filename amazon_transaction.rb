@@ -16,7 +16,13 @@ class AmazonTransaction
    end
   
   def apply_discount
-    @total = price*@discount
-  end
+    if discount == 100
+    "no discount to apple"
+  else
+    a = 100.0 - @discount
+    b = @total *a
+    @total = @total - b
+    "your new total is #{@total.to_i"
+      end
   
   end
